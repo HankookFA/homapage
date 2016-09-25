@@ -11,9 +11,11 @@ image:
 
 ---
 <p class="teaser" itemprop="description">
-  {{ page.language }}
+有需要的东西请联系我们
 </p>
 
-TEL. (032) 321-5396  
-FAX. (032) 321-5468  
+TEL. +82-32-321-5396
+
+FAX. +82-32-321-5468
+
 Email. [hankookfa@hankookfa.com](mailto:hankookfa@hankookfa.com)  

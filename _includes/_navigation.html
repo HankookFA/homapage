@@ -34,14 +34,14 @@
             {% comment %}   If right side WITHOUT dropdown menu do   {% endcomment %}
             {% if link.dropdown == nil %}
               <li class="divider"></li>
-              <li{% if link.url == page.url %} class="active"{% elsif page.url contains link.url %} class="active"{% elsif page.homepage == true and link.url == '/' %} class="active"{% endif %}><a href="{{ domain }}{{ site.baseurl }}{% if page.is_default_language == false %}/{{ page.language }}{% elsif page.language == 'fr' %}/en{% endif %}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{% if page.language == 'en' %}{{ link.title-en | escape }}{% elsif page.language == 'kr' %}{{ link.title-kr | escape }}{% elsif page.language == 'cn' %}{{ link.title-cn | escape }}{% elsif page.language == 'fr' %}{{ link.title-en | escape }}{% endif %}</a></li>
+              <li {% if link.url == page.url %} class="active"{% elsif page.url contains link.url %} class="active"{% elsif page.homepage == true and link.url == '/' %} class="active"{% endif %}><a id="{{link.url}}" href="{{ domain }}{{ site.baseurl }}{% if page.is_default_language == false %}/{{ page.language }}{% elsif page.language == 'fr' %}/en{% endif %}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{% if page.language == 'en' %}{{ link.title-en | escape }}{% elsif page.language == 'kr' %}{{ link.title-kr | escape }}{% elsif page.language == 'cn' %}{{ link.title-cn | escape }}{% elsif page.language == 'fr' %}{{ link.title-en | escape }}{% endif %}</a></li>
 
             {% comment %}   If right side WITH dropdown menu do   {% endcomment %}
             {% else %}
 
               <li class="divider"></li>
               <li class="has-dropdown{% if link.url == page.url %} active{% endif %}">
-                <a href="{{ domain }}{{ site.baseurl }}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{% if page.language == 'en' %}{{ link.title-en | escape }}{% elsif page.language == 'kr' %}{{ link.title-kr | escape }}{% elsif page.language == 'cn' %}{{ link.title-cn | escape }}{% elsif page.language == 'fr' %}{{ link.title-en | escape }}{% endif %}</a>
+                <a id="/language/" href="{{ domain }}{{ site.baseurl }}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{% if page.language == 'en' %}{{ link.title-en | escape }}{% elsif page.language == 'kr' %}{{ link.title-kr | escape }}{% elsif page.language == 'cn' %}{{ link.title-cn | escape }}{% elsif page.language == 'fr' %}{{ link.title-en | escape }}{% endif %}</a>
 
                   <ul class="dropdown">
                     {% for dropdown_link in link.dropdown %}
@@ -52,7 +52,7 @@
                         {% assign domain = site.url %}
                       {% endif %}
 
-                      <li><a href="{{ domain }}{{ site.baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
+                      <li><a href="#"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %} onclick="location.href={{ dropdown_link.url }};">{{ dropdown_link.title | escape }}</a></li>
                     {% endfor %}
                   </ul>
 
@@ -88,25 +88,39 @@
 
             {% comment %}   If left side WITHOUT dropdown menu do   {% endcomment %}
             {% if link.dropdown == nil %}
-              <li{% if page.url contains link.url and link.url != '/' %} class="active"{% elsif page.homepage == true and link.url == '/' %} class="active"{% endif %}><a href="{{ domain }}{{ site.baseurl }}{% if page.is_default_language == false %}/{{ page.language }}{% elsif page.language == 'fr' %}/en{% endif %}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{% if page.language == 'en' %}{{ link.title-en | escape }}{% elsif page.language == 'kr' %}{{ link.title-kr | escape }}{% elsif page.language == 'cn' %}{{ link.title-cn | escape }}{% elsif page.language == 'fr' %}{{ link.title-en | escape }}{% endif %}</a></li>
+              <li {% if page.url contains link.url and link.url != '/' %} class="active"{% elsif page.homepage == true and link.url == '/' %} class="active"{% endif %}><a id="{{link.url}}" href="{{ domain }}{{ site.baseurl }}{% if page.is_default_language == false %}/{{ page.language }}{% elsif page.language == 'fr' %}/en{% endif %}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{% if page.language == 'en' %}{{ link.title-en | escape }}{% elsif page.language == 'kr' %}{{ link.title-kr | escape }}{% elsif page.language == 'cn' %}{{ link.title-cn | escape }}{% elsif page.language == 'fr' %}{{ link.title-en | escape }}{% endif %}</a></li>
               <li class="divider"></li>
 
             {% comment %}   If left side WITH dropdown menu do   {% endcomment %}
             {% else %}
 
               <li class="has-dropdown{% if page.url contains link.url %} active{% endif %}">
-                <a href="{{ domain }}{{ site.baseurl }}{% if page.is_default_language == false %}/{{ page.language }}{% elsif page.language == 'fr' %}/en{% endif %}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{% if page.language == 'en' %}{{ link.title-en | escape }}{% elsif page.language == 'kr' %}{{ link.title-kr | escape }}{% elsif page.language == 'cn' %}{{ link.title-cn | escape }}{% elsif page.language == 'fr' %}{{ link.title-en | escape }}{% endif %}</a>
+                <a id="{{link.url}}" href="{{ domain }}{{ site.baseurl }}{% if page.is_default_language == false %}/{{ page.language }}{% elsif page.language == 'fr' %}/en{% endif %}{{ link.url }}"{% if link.url contains 'http' %} target="_blank"{% endif %}>{% if page.language == 'en' %}{{ link.title-en | escape }}{% elsif page.language == 'kr' %}{{ link.title-kr | escape }}{% elsif page.language == 'cn' %}{{ link.title-cn | escape }}{% elsif page.language == 'fr' %}{{ link.title-en | escape }}{% endif %}</a>
                   <ul class="dropdown">
-                    {% for dropdown_link in link.dropdown %}
+                    {% if link.url == '/smt-equipment/' %}
+                      {% for dropdown_link in link.dropdown %}
 
-                      {% if dropdown_link.url contains 'http' %}
-                        {% assign domain = '' %}
-                        {% else %}
-                        {% assign domain = site.url %}
-                      {% endif %}
+                        {% if dropdown_link.url contains 'http' %}
+                          {% assign domain = '' %}
+                          {% else %}
+                          {% assign domain = site.url %}
+                        {% endif %}
 
-                      <li><a href="{{ domain }}{{ site.baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
-                    {% endfor %}
+                        <li><a href="{{ domain }}{{ site.baseurl }}{% if page.is_default_language == false %}/{{ page.language }}{% elsif page.language == 'fr' %}/en{% endif %}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
+                      {% endfor %}
+                    {% else %}
+                      {% for dropdown_link in link.dropdown %}
+
+                        {% if dropdown_link.url contains 'http' %}
+                          {% assign domain = '' %}
+                          {% else %}
+                          {% assign domain = site.url %}
+                        {% endif %}
+
+                        <li><a href="{{ domain }}{{ site.baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
+                      {% endfor %}
+                    {% endif %}
+
                   </ul>
 
               </li>
@@ -119,3 +133,39 @@
     </section>
   </nav>
 </div><!-- /#navigation -->
+
+<script type="text/javascript">
+window.onload = function () {
+  if (window.sessionStorage) {
+    switch ( sessionStorage.getItem('lang')) {
+      case 'cn':  document.getElementById("/smt-equipment/").innerHTML = '库存设备';
+                  document.getElementById("/brand-list/").innerHTML = '在做品牌';
+                  document.getElementById("/package-sale/").innerHTML = '打包出售';
+                  document.getElementById("/items-wanted/").innerHTML = '매입설비(중)';
+                  document.getElementById("/language/").innerHTML = '언어(중)';
+                  document.getElementById("/contact/").innerHTML = '연락처(중)';
+                  // location.href='/cn/';
+        break;
+      case 'kr': document.getElementById("/smt-equipment/").innerHTML = '유휴 장비';
+                  document.getElementById("/brand-list/").innerHTML = '취급 브랜드';
+                  document.getElementById("/package-sale/").innerHTML = '패키지 세일';
+                  document.getElementById("/items-wanted/").innerHTML = '매입설비';
+                  document.getElementById("/language/").innerHTML = '언어';
+                  document.getElementById("/contact/").innerHTML = '연락처';
+                  // location.href='/kr/';
+        break;
+      case 'en': document.getElementById("/smt-equipment/").innerHTML = 'Stock List';
+                  document.getElementById("/brand-list/").innerHTML = 'Brands List';
+                  document.getElementById("/package-sale/").innerHTML = 'Package Sale';
+                  document.getElementById("/items-wanted/").innerHTML = 'Items Wanted';
+                  document.getElementById("/language/").innerHTML = 'Language';
+                  document.getElementById("/contact/").innerHTML = 'Contact';
+                  // location.href='/en/';
+        break;
+      default:
+        break;
+    }
+  }
+}
+
+</script>

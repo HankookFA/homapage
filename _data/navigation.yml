@@ -96,7 +96,7 @@
   side: right
   dropdown:
   - title: "English"
-    url: "/"
+    url: "/en/"
   - title: "Chinese"
     url: "/cn/"
   - title: "Korean"

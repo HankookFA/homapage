@@ -51,3 +51,9 @@ homepage: true
   </div>
   <a class="close-reveal-modal">&#215;</a>
 </div>
+
+<script>
+  if (window.sessionStorage) {
+    sessionStorage.setItem('lang', 'en');
+  }
+</script>
