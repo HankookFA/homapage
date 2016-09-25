@@ -54,6 +54,23 @@ homepage: true
 
 <script>
   if (window.sessionStorage) {
-    sessionStorage.setItem('lang', 'kr');
+    if (!sessionStorage.getItem('lang')) {
+      switch (window.navigator.language) {
+        case 'ko':  sessionStorage.setItem('lang', 'kr');
+                    location.href = '/kr/';
+          break;
+        case 'en':  sessionStorage.setItem('lang', 'en');
+                    location.href = '/en/';
+          break;
+        case 'zh':  sessionStorage.setItem('lang', 'cn');
+                    location.href = '/cn/';
+          break;
+        default:  sessionStorage.setItem('lang', 'en');
+                  location.href = '/en/';
+          break;
+      }
+    } else {
+      sessionStorage.setItem('lang', 'kr');
+    }
   }
 </script>
