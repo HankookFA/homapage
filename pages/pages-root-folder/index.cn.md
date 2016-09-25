@@ -19,7 +19,7 @@ widget2:
   image: hankookfa/brand-list.png
   text: '各高品质设备按品牌分类。</br></br>- SMT Machines</br>Samsung, Mirae, Panasert, Yamaha, Juki, Fuji, KME , Sanyo, Tenryu</br></br>- Reflow Ovens</br>Heller, TSM, Vitronics</br></br>- Auto Insert Machines</br>Panasert, Universal, Dynapert, TDK</br>'
 widget3:
-  title: "패키지 세일"
+  title: "打包出售"
   url: '/package-sale/'
   image: hankookfa/package-sale.jpg
   text: '合理的价格商品目录。'
