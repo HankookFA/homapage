@@ -14,11 +14,11 @@ permalink: "/smt-equipment/feeders-and-spare-parts/samsung/:title/"
 ---
 <div class="row">
     <div class="medium-6 columns t30">
-    <img src="{{ site.urlimg }}hankookfa/SM Non-IT Feeders/SM Non-IT.jpg" alt="">
+    <img src="{{ site.urlimg }}hankookfa/SM Non-IT Feeders/SM_Non-IT.jpg" alt="">
     </div><!-- /.medium-8.columns -->
 
     <div class="medium-6 columns t30">
-      <img src="{{ site.urlimg }}hankookfa/SM Non-IT Feeders/SM normal type pin.jpg" alt="">
+      <img src="{{ site.urlimg }}hankookfa/SM Non-IT Feeders/SM_normal_type_pin.jpg" alt="">
     </div><!-- /.medium-4.columns -->
 
 </div><!-- /.row -->

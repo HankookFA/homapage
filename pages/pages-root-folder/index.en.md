@@ -35,7 +35,7 @@ widget3:
 #
 callforaction:
   url: /contact/
-  text: If you are looking for any particular machine(s), please contact us ›
+  text: Contact Us ›
   style: secondary
 permalink: /index.html
 #

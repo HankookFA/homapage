@@ -64,7 +64,7 @@
 
 - title-en: "Items Wanted"
   title-kr: "매입설비"
-  title-cn: "매입설비(중)"
+  title-cn: "求购设备"
   url: "/items-wanted/"
   side: left
 
@@ -91,7 +91,7 @@
 #   url: "/search/"
 #   side: right
 - title-en: "Language"
-  title-kr: "언어"
+  title-kr: "语言"
   title-cn: "언어(중)"
   side: right
   dropdown:
@@ -104,6 +104,6 @@
 
 - title-en: "Contact"
   title-kr: "연락처"
-  title-cn: "연락처(중)"
+  title-cn: "联系方式"
   url: "/contact/"
   side: right
