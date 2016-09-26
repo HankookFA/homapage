@@ -12,7 +12,7 @@ widget1:
   url: '/smt-equipment/'
 #  image: hankookfa/stock-list.jpg
   text: 'A stock list by categories.</br></br>- SMT</br>Chip Mounter, Multi Mounter, Screen Printer, Reflow Oven, Dispenser, Loader & Unloader, Full Line Machines</br></br>-Insert Machines</br>Radial Inserter, Axial Inserter, Sequencer, Jumper Wire machine'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="/images/hankookfa/sddefault.png" alt=""/></a>'
+  video: '<a href="#" data-reveal-id="videoModal"><img src="/images/hankookfa/sddefault.jpg" alt=""/></a>'
 widget2:
   title: "Brands List"
   url: '/brand-list/'
