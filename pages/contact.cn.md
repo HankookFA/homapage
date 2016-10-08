@@ -20,11 +20,13 @@ locations: "37.504965, 126.749437"
 </ul>
 
 
-주소: 경기도 부천시 원미구 소향로 13, 407호 (우) 14544
+Office Address: Room 407, 13 Sohyang-ro, Wonmi-gu, Bucheon-si, Gyeonggi-do, South Korea (ZIP: 14544)
 
-TEL. (032) 321-5396  
+Warehouse Address: 144, Annyeongnam-ro, Hwaseong-si, Gyeonggi-do, Korea
 
-FAX. (032) 321-5468  
+TEL. +82-32-321-5396  
+
+FAX. +82-32-321-5468  
 
 #### Email. [hankookfa@hankookfa.com](mailto:hankookfa@hankookfa.com) ####     
 
