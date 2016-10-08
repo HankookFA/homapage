@@ -20,11 +20,13 @@ Since 1994, Hankook F.A. has traded quality used SMT and Insert equipment with a
 </ul>
 
 
-Address: Room 407, 13 Sohyang-ro, Wonmi-gu, Bucheon-si, Gyeonggi-do, South Korea (ZIP: 14544)
+Office Address: Room 407, 13 Sohyang-ro, Wonmi-gu, Bucheon-si, Gyeonggi-do, South Korea (ZIP: 14544)
 
-TEL. (032) 321-5396  
+Warehouse Address: 144, Annyeongnam-ro, Hwaseong-si, Gyeonggi-do, Korea
 
-FAX. (032) 321-5468  
+TEL. +82-32-321-5396  
+
+FAX. +82-32-321-5468  
 
 #### Email. [hankookfa@hankookfa.com](mailto:hankookfa@hankookfa.com) ####     
 
