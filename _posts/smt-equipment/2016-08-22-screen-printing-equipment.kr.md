@@ -10,12 +10,8 @@ image:
     title:
 
 ---
-<p class="teaser" itemprop="description">
-현재 판매 가능한 재고가 없습니다. 찾으시는 물건이 있다면 연락주시기 바랍니다.
-</p>
+## [Samsung][1]'s Equipment
+{: .t60 }
+{% include list-posts tag='Samsung Screen Printing Equipment' %}
 
-TEL. (032) 321-5396
-
-FAX. (032) 321-5468
-
-Email. [hankookfa@hankookfa.com](mailto:hankookfa@hankookfa.com)  
+[1]: {{ site.url }}/smt-equipment/screen-printing-equipment/samsung/

@@ -10,12 +10,8 @@ image:
     title:
 
 ---
-<p class="teaser" itemprop="description">
-有需要的东西请联系我们
-</p>
+## [Samsung][1]'s Equipment
+{: .t60 }
+{% include list-posts tag='Samsung Screen Printing Equipment' %}
 
-TEL. +82-32-321-5396
-
-FAX. +82-32-321-5468
-
-Email. [hankookfa@hankookfa.com](mailto:hankookfa@hankookfa.com)  
+[1]: {{ site.url }}/smt-equipment/screen-printing-equipment/samsung/
