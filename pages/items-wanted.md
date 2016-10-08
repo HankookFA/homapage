@@ -11,6 +11,5 @@ permalink: "/items-wanted/"
 
 TEL. +82-32-321-5396 FAX. +82-32-321-5468 Email. [hankookfa@hankookfa.com](mailto:hankookfa@hankookfa.com)
 
-- Panasonic Dispencer – HDF (newer than 2006)
+- Kohyoung AOI - 8030III
 - Panasonic Dispencer – HDP-G1
-- Kohyoung AOI/SPI
