@@ -8,7 +8,7 @@ categories:
     - smt-equipment
 header: no
 image:
-    title: mirae/MX200L-2012.jpg
+    title: mirae/MX400-2012.jpg
 ---
 
 <!--more-->
