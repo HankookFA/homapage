@@ -16,8 +16,8 @@ image:
 
 [1]: {{ site.url }}/smt-equipment/screen-printing-equipment/samsung/
 
-## [Yamaha][2]'s Equipment
+## [SJ Innotech][2]'s Equipment
 {: .t60 }
-{% include list-posts tag='Yamaha Screen Printing Equipment' %}
+{% include list-posts tag='SJ Innotech Screen Printing Equipment' %}
 
-[2]: {{ site.url }}/smt-equipment/screen-printing-equipment/yamaha/
+[2]: {{ site.url }}/smt-equipment/screen-printing-equipment/sj-innotech/

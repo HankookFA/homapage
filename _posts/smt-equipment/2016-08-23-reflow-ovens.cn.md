@@ -8,7 +8,7 @@ categories:
     - smt-equipment
 header: no
 image:
-    title: heller/1809mk3-2010.jpg
+    title: heller/1913EXL.jpg
 ---
 
 ## [Heller][1]'s Equipment

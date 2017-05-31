@@ -10,12 +10,8 @@ image:
     title:
 
 ---
-<p class="teaser" itemprop="description">
-Please contact us for availability.
-</p>
+## [Saki][1]'s Equipment
+{: .t60 }
+{% include list-posts tag='Saki AOI and SPI' %}
 
-TEL. +82-32-321-5396
-
-FAX. +82-32-321-5468
-
-Email. [hankookfa@hankookfa.com](mailto:hankookfa@hankookfa.com)  
+[1]: {{ site.url }}/smt-equipment/aoi-and-spi/saki/
