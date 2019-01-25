@@ -40,7 +40,7 @@
     url: "/smt-equipment/others/"
 
 - title-en: "Brands List"
-  title-kr: "취급 브랜드들"
+  title-kr: "취급 브랜드"
   title-cn: "在做品牌"
   url: "/brand-list/"
   side: left
